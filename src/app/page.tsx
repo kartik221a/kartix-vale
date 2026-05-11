@@ -118,7 +118,7 @@ export default function HomePage() {
             <motion.div variants={fadeInUp}>
               <BookCard
                 title="Thorns of the Fae Thorne: A Slow Burn Dark Fae Romance"
-                coverUrl="https://m.media-amazon.com/images/I/61xJcNKKLXL._SY522_.jpg"
+                coverUrl="https://m.media-amazon.com/images/I/61kY61LNZ-L._SY522_.jpg"
                 genre="Dark Fae Romance"
                 price="$2.99"
                 amazonUrl="https://www.amazon.com/dp/B0H1BTKZ4M"
@@ -157,7 +157,7 @@ export default function HomePage() {
               <motion.div variants={fadeInUp}>
                 <BookCard
                   title="Thorns of the Fae Thorne: A Slow Burn Dark Fae Romance"
-                  coverUrl="https://m.media-amazon.com/images/I/61xJcNKKLXL._SY522_.jpg"
+                  coverUrl="https://m.media-amazon.com/images/I/61kY61LNZ-L._SY522_.jpg"
                   genre="Dark Fae Romance"
                   price="$2.99"
                   amazonUrl="https://www.amazon.com/dp/B0H1BTKZ4M"
