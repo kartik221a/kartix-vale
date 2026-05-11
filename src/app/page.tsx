@@ -118,9 +118,9 @@ export default function HomePage() {
             <motion.div variants={fadeInUp}>
               <BookCard
                 title="Thorns of the Fae Thorne: A Slow Burn Dark Fae Romance"
-                coverUrl="https://m.media-amazon.com/images/I/61fdKbxnVyL._SY522_.jpg"
+                coverUrl="https://m.media-amazon.com/images/I/61xJcNKKLXL._SY522_.jpg"
                 genre="Dark Fae Romance"
-                price="$1"
+                price="$2.99"
                 amazonUrl="https://www.amazon.com/dp/B0H1BTKZ4M"
                 featured
                 description="THREE HUNDRED YEARS AGO, SOMETHING BROKE THE WORLD. THE FAE COURT HAS BEEN LYING ABOUT IT EVER SINCE. The Thornwall is consuming everything. Ancient cities swallowed whole. Entire populations displaced. The very magic that sustains the realm — a living frequency called the Rootsong — is rotting from the inside."
@@ -151,15 +151,15 @@ export default function HomePage() {
 
             <motion.div
               variants={staggerContainer}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
             >
               {/* Real book */}
               <motion.div variants={fadeInUp}>
                 <BookCard
                   title="Thorns of the Fae Thorne: A Slow Burn Dark Fae Romance"
-                  coverUrl="https://m.media-amazon.com/images/I/61fdKbxnVyL._SY522_.jpg"
+                  coverUrl="https://m.media-amazon.com/images/I/61xJcNKKLXL._SY522_.jpg"
                   genre="Dark Fae Romance"
-                  price="$1"
+                  price="$2.99"
                   amazonUrl="https://www.amazon.com/dp/B0H1BTKZ4M"
                 />
               </motion.div>
@@ -168,7 +168,7 @@ export default function HomePage() {
               <motion.div variants={fadeInUp}>
                 <BookCard
                   title="Title to be revealed"
-                  coverUrl="https://m.media-amazon.com/images/I/61fdKbxnVyL._SY522_.jpg"
+                  coverUrl="/coming-soon-cover.svg"
                   genre="Paranormal Romance"
                   comingSoon
                 />
@@ -176,7 +176,7 @@ export default function HomePage() {
               <motion.div variants={fadeInUp}>
                 <BookCard
                   title="Title to be revealed"
-                  coverUrl="https://m.media-amazon.com/images/I/61fdKbxnVyL._SY522_.jpg"
+                  coverUrl="/coming-soon-cover.svg"
                   genre="Gothic Romance"
                   comingSoon
                 />
@@ -184,7 +184,7 @@ export default function HomePage() {
               <motion.div variants={fadeInUp}>
                 <BookCard
                   title="Title to be revealed"
-                  coverUrl="https://m.media-amazon.com/images/I/61fdKbxnVyL._SY522_.jpg"
+                  coverUrl="/coming-soon-cover.svg"
                   genre="Fantasy Romance"
                   comingSoon
                 />
@@ -355,7 +355,7 @@ export default function HomePage() {
               variants={fadeInUp}
               className="text-muted-foreground text-base md:text-lg mb-8 max-w-xl mx-auto"
             >
-              Your next obsession is one click away. Start reading Thorns of the Fae Thorne today for just $1.
+              Your next obsession is one click away. Start reading Thorns of the Fae Thorne today for just $2.99.
             </motion.p>
             <motion.div variants={fadeInUp}>
               <a
@@ -366,7 +366,7 @@ export default function HomePage() {
               >
                 <Button className="bg-blood-light hover:bg-blood text-white font-semibold px-10 h-14 text-lg transition-all duration-300 hover:shadow-[0_0_40px_rgba(220,20,60,0.4)] hover:scale-105">
                   <BookOpen className="h-5 w-5 mr-2" />
-                  Read Now — $1 on Amazon
+                  Read Now — $2.99 on Amazon
                 </Button>
               </a>
             </motion.div>

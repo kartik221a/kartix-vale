@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://m.media-amazon.com/images/I/61fdKbxnVyL._SY522_.jpg",
+        url: "https://m.media-amazon.com/images/I/61xJcNKKLXL._SY522_.jpg",
         width: 1200,
         height: 630,
         alt: "Kartix Vale — Dark Romance Author",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Kartix Vale — Dark Romance Author",
     description:
       "Explore dark fae romance, paranormal romance, gothic romance, and fantasy romance novels. Love was never meant to be safe.",
-    images: ["https://m.media-amazon.com/images/I/61fdKbxnVyL._SY522_.jpg"],
+    images: ["https://m.media-amazon.com/images/I/61xJcNKKLXL._SY522_.jpg"],
   },
   robots: {
     index: true,
@@ -115,12 +115,12 @@ function JsonLd() {
     },
     genre: ["Dark Fae Romance", "Paranormal Romance", "Mystery/Thriller Romance"],
     url: "https://www.amazon.com/dp/B0H1BTKZ4M",
-    image: "https://m.media-amazon.com/images/I/61fdKbxnVyL._SY522_.jpg",
+    image: "https://m.media-amazon.com/images/I/61xJcNKKLXL._SY522_.jpg",
     isbn: "B0H1BTKZ4M",
     bookFormat: "EBook",
     offers: {
       "@type": "Offer",
-      price: "1.00",
+      price: "2.99",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       url: "https://www.amazon.com/dp/B0H1BTKZ4M",

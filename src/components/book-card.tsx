@@ -96,40 +96,40 @@ export function BookCard({
     );
   }
 
-  // Standard card
+  // Standard card - horizontal on mobile, vertical on desktop
   return (
-    <article className="card-dark rounded-xl overflow-hidden group transition-all duration-300 hover:border-blood/30 hover:shadow-[0_0_30px_rgba(139,0,0,0.15)]">
+    <article className="card-dark rounded-xl overflow-hidden group transition-all duration-300 hover:border-blood/30 hover:shadow-[0_0_30px_rgba(139,0,0,0.15)] flex flex-row sm:flex-col">
       {/* Book Cover */}
-      <div className="relative aspect-[2/3] overflow-hidden">
+      <div className="relative w-24 sm:w-full sm:aspect-[2/3] aspect-auto h-auto sm:h-auto flex-shrink-0 overflow-hidden">
         <Image
           src={coverUrl}
           alt={title}
           fill
           className={`object-cover transition-transform duration-500 group-hover:scale-105 ${comingSoon ? "grayscale opacity-60" : ""}`}
-          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          sizes="(max-width: 640px) 96px, (max-width: 1024px) 33vw, 25vw"
         />
         {comingSoon && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/50">
-            <span className="font-serif text-xl text-gold tracking-wider uppercase">
+            <span className="font-serif text-xs sm:text-xl text-gold tracking-wider uppercase">
               Coming Soon
             </span>
           </div>
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-        <Badge className="absolute top-3 left-3 bg-blood/80 text-white border-none text-xs tracking-wider uppercase">
+        <Badge className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-blood/80 text-white border-none text-[10px] sm:text-xs tracking-wider uppercase">
           {genre}
         </Badge>
       </div>
 
       {/* Card Content */}
-      <div className="p-4">
-        <h3 className="font-serif text-base md:text-lg text-foreground mb-2 leading-tight line-clamp-2">
+      <div className="p-3 sm:p-4 flex flex-col justify-center flex-1 min-w-0">
+        <h3 className="font-serif text-sm sm:text-base md:text-lg text-foreground mb-2 leading-tight line-clamp-2">
           {title}
         </h3>
         {comingSoon ? (
           <Button
             disabled
-            className="w-full bg-muted text-muted-foreground cursor-not-allowed text-sm"
+            className="w-full bg-muted text-muted-foreground cursor-not-allowed text-xs sm:text-sm"
           >
             Coming Soon
           </Button>
@@ -141,9 +141,9 @@ export function BookCard({
             data-track={`buy-amazon-${title.slice(0, 20)}`}
             className="block"
           >
-            <Button className="w-full bg-blood-light hover:bg-blood text-white font-semibold transition-all duration-300 hover:shadow-[0_0_20px_rgba(220,20,60,0.3)] text-sm">
-              <ExternalLink className="h-3.5 w-3.5 mr-1.5" />
-              Buy on Amazon — {price}
+            <Button className="w-full bg-blood-light hover:bg-blood text-white font-semibold transition-all duration-300 hover:shadow-[0_0_20px_rgba(220,20,60,0.3)] text-xs sm:text-sm">
+              <ExternalLink className="h-3 w-3 mr-1.5" />
+              Buy — {price}
             </Button>
           </a>
         )}
