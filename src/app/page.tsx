@@ -5,7 +5,7 @@ import { BookCard } from "@/components/book-card";
 import { EmailCapture } from "@/components/email-capture";
 import { FaqSection } from "@/components/faq-section";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, BookOpen, Feather, Eye, Heart } from "lucide-react";
+import { ChevronDown, BookOpen, Eye, Heart } from "lucide-react";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -227,7 +227,7 @@ export default function HomePage() {
               <div className="flex-shrink-0">
                 <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-midnight via-blood/20 to-midnight flex items-center justify-center border border-border relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                  <Feather className="h-16 w-16 md:h-20 md:w-20 text-foreground/30" />
+                  <span className="text-6xl md:text-7xl">🪶</span>
                 </div>
               </div>
 
