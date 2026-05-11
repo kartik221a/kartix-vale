@@ -8,12 +8,12 @@ export default function Home() {
       </h1>
       <p className="text-lg text-gray-400">Welcome to your simple demo site</p>
       <a
-        href="https://www.youtube.com"
+        href="https://www.amazon.com/dp/B0H1BTKZ4M"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 px-8 py-4 bg-red-600 hover:bg-red-700 text-white text-lg font-semibold rounded-xl shadow-lg hover:shadow-red-600/40 transition-all duration-300 hover:scale-105 active:scale-95"
+        className="mt-4 px-8 py-4 bg-amber-500 hover:bg-amber-600 text-gray-900 text-lg font-semibold rounded-xl shadow-lg hover:shadow-amber-500/40 transition-all duration-300 hover:scale-105 active:scale-95"
       >
-        ▶ Go to YouTube
+        📖 Check Out My Book
       </a>
     </div>
   )
